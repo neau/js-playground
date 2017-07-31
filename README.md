@@ -1,0 +1,1 @@
+In this project, [https://github.com/neau](neau) tries to overcome procrastination and play with some JavaScript basics.
