@@ -50,9 +50,12 @@ function returnsDate() {
 }
 console.log('Today is ' + returnsDate() + '. This function is dynamic, realizing a switch-case construct.');
 
-//
+// Changing variable types
+function retType(changingVariable) {
+    console.log('changingVariable\'s type is ' + changingVariable + ' and its type is ' + typeof(changingVariable));
+}
 
-var changingVariable = 32767;
-console.log(changingVariable.type);
-var changingVariable = 'a string';
-var changingVariable = true;
+var anArray = [32767, '\'a string\'', true, null, undefined, 12 + 'a', '12' + 'a', [] + {}, 'array + array' + [] + []];
+for (var i = 0; i < anArray.length; i++) {
+    retType(anArray[i]);
+}
