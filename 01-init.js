@@ -5,6 +5,7 @@
     spanning across four lines
 */
 
+// /// //// /// // / // /// //// /// // / // /// //// /// // / 
 // Playing with a try/catch block.
 function tryCatchFun() {
     try {
@@ -21,6 +22,7 @@ function tryCatchFun() {
 }
 console.log(tryCatchFun() + ', the output of an if condition, testing various exceptions.');
 
+// /// //// /// // / // /// //// /// // / // /// //// /// // / 
 // Playing with a switch-case construct
 function returnsDate() {
     switch (new Date().getDay()) {
@@ -50,12 +52,20 @@ function returnsDate() {
 }
 console.log('Today is ' + returnsDate() + '. This function is dynamic, realizing a switch-case construct.');
 
+// /// //// /// // / // /// //// /// // / // /// //// /// // / 
 // Changing variable types
 function retType(changingVariable) {
     console.log('changingVariable\'s type is ' + changingVariable + ' and its type is ' + typeof(changingVariable));
 }
 
-var anArray = [32767, '\'a string\'', true, null, undefined, 12 + 'a', '12' + 'a', [] + {}, 'array + array' + [] + []];
+var anArray = [32767, '\'a string\'', true, null, undefined, 12 + 'a', '12' + 4 + 2 + 'a', [] + {}, 'array + array' + [] + []];
 for (var i = 0; i < anArray.length; i++) {
     retType(anArray[i]);
 }
+
+// /// //// /// // / // /// //// /// // / // /// //// /// // / 
+//Testing code block. wtf is this output
+function a() {
+    console.log(this);
+}
+a.call(null);
