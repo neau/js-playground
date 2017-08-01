@@ -1,5 +1,5 @@
-// noob approach
-//fizzBuzz();
+// Intial approach
+// fizzBuzz();
 function fizzBuzz() {
     for ( var i = 1; i < 100; i++) {
         if (( i % 3 == 0 ) && ( i % 5 != 0 )) console.log(i + ', Fizz');
@@ -9,6 +9,7 @@ function fizzBuzz() {
 }
 
 // Non-univercity approach
+// fizzBuzzOutput();
 function fizzBuzzOutput() {
     for (var i = 1; i <= 100; i++) {
         var output = '' ;
@@ -18,10 +19,9 @@ function fizzBuzzOutput() {
         console.log(output);   
     }
 }
-//fizzBuzzOutput();
 
-//Difficult to read, but working
-//fizzTernary();
+// Difficult to read, but working
+// fizzTernary();
 function fizzTernary(){
     for (var i = 1; i <= 100; i++) {
         var output = '';     
