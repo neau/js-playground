@@ -1,4 +1,5 @@
 // noob approach
+//fizzBuzz();
 function fizzBuzz() {
     for ( var i = 1; i < 100; i++) {
         if (( i % 3 == 0 ) && ( i % 5 != 0 )) console.log(i + ', Fizz');
@@ -6,7 +7,6 @@ function fizzBuzz() {
         if (( i % 3 == 0 ) && ( i % 5 == 0 )) console.log(i + ', Fizzbuzz');
     }
 }
-//fizzBuzz();
 
 // Non-univercity approach
 function fizzBuzzOutput() {
@@ -21,13 +21,13 @@ function fizzBuzzOutput() {
 //fizzBuzzOutput();
 
 //Difficult to read, but working
+//fizzTernary();
 function fizzTernary(){
     for (var i = 1; i <= 100; i++) {
         var output = '';     
         console.log((i%3==0&&i%5==0)?output+=i+' FizzBuzz':(i%3==0)?output+=i+' Fizz':(i%5==0)?output+=i+' Buzz':output=i);
     }
 }
-//fizzTernary();
 
 // Testing short-circuit evaluation
 // https://en.wikipedia.org/wiki/Short-circuit_evaluation
