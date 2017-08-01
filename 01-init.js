@@ -51,21 +51,23 @@ function returnsDate() {
         return day
 }
 console.log('Today is ' + returnsDate() + '. This function is dynamic, realizing a switch-case construct.');
+console['log'](new Date().getDate())
 
 // /// //// /// // / // /// //// /// // / // /// //// /// // / 
 // Changing variable types
-function retType(changingVariable) {
-    console.log('changingVariable\'s type is ' + changingVariable + ' and its type is ' + typeof(changingVariable));
-}
+// It looks so good!
+//testingArray();
+function testingArray() {
+    var anArray = [32767, '\'a string\'', true, null, undefined, 12 + 'a', '12' + 4 + 2 + 'a', [] + {}, 'array + array' + [] + []]; 
 
-var anArray = [32767, '\'a string\'', true, null, undefined, 12 + 'a', '12' + 4 + 2 + 'a', [] + {}, 'array + array' + [] + []];
-for (var i = 0; i < anArray.length; i++) {
-    retType(anArray[i]);
+    for (var i = 0; i <= anArray.length; i++) {
+        console.log('Array item #' + i +  '\n\tVALUE: ' + anArray[i] + '\n\tTYPE: ' + typeof(anArray[i]) + '\n');
+    }
 }
 
 // /// //// /// // / // /// //// /// // / // /// //// /// // / 
 //Testing code block. wtf is this output
+// a.call(null);
 function a() {
     console.log(this);
 }
-a.call(null);
