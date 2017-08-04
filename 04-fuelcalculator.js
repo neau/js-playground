@@ -1,3 +1,7 @@
+/*
+    Function that calculates the average l/km and an estimated price based on the distance.
+*/
+
 function calculateFuel() {
     var fuelConsumption = 5.0; // Liters/100km
     var distance = 910;
