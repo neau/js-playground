@@ -8,7 +8,7 @@ function fizzBuzz() {
     }
 }
 
-// Non-univercity approach
+// Non-university approach
 // fizzBuzzOutput();
 function fizzBuzzOutput() {
     for (var i = 1; i <= 100; i++) {
